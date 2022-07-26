@@ -16,10 +16,10 @@ import gengCommand from "./gengCommand";
  * 搜索源
  */
 const fromDict: Record<string, CommandType> = {
+  bing: bingCommand,
   baidu: baiduCommand,
   baidudev: baidudevCommand,
   bilibili: bilibiliCommand,
-  bing: bingCommand,
   codenav: codenavCommand,
   douban: doubanCommand,
   douyin: douyinCommand,
@@ -52,7 +52,7 @@ const searchCommand: CommandType = {
       key: "from",
       alias: ["f"],
       type: "string",
-      defaultValue: "baidu",
+      defaultValue: "bing",
     },
     {
       key: "self",
@@ -62,7 +62,7 @@ const searchCommand: CommandType = {
       defaultValue: false,
     },
   ],
-  // 默认使用百度搜索
+  // 使用bing搜索
   action: (options, terminal) => {
     const { from = "bing" } = options;
     // 执行不同搜索源的搜索方法
