@@ -42,8 +42,7 @@ const initXTerm = () => {
     term.write(promptWords);
   };
 
-  term.writeln("Welcome to YuIndex，coolest browser index for geeks!");
-  term.writeln("Author coder_yupi: https://github.com/liyupi");
+  term.writeln("Welcome，coolest browser index for geeks!");
   term.prompt();
 
   term.onData((key: string) => {

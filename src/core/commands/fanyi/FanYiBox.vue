@@ -1,6 +1,6 @@
 <template>
   <div>
-    <iframe src="https://fanyi.baidu.com/" />
+    <iframe src="https://translate.google.cn/" />
   </div>
 </template>
 

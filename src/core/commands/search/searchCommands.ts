@@ -64,7 +64,7 @@ const searchCommand: CommandType = {
   ],
   // 默认使用百度搜索
   action: (options, terminal) => {
-    const { from = "baidu" } = options;
+    const { from = "bing" } = options;
     // 执行不同搜索源的搜索方法
     const fromObj = fromDict[from];
     if (!fromObj) {
